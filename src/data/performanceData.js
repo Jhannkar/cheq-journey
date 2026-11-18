@@ -45,7 +45,7 @@ export const rotation = [
 /* ------------------------------------------------------------------ */
 
 export const headlineKpis = [
-  { value: { target: 2714, suffix: '+' }, label: 'Fraud Cases' },
+  { value: { target: 2714, suffix: '+' }, label: 'Fraud Transactions' },
   { value: { target: 1203, suffix: '+' }, label: 'Disputes Handled' },
   { value: { target: 3102, suffix: '+' }, label: 'CX Escalations' },
   { value: { prefix: '₹', target: 1.74, decimals: 2, suffix: 'Cr' }, label: 'Fraud Prevented' },
