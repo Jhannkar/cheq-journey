@@ -231,6 +231,25 @@ export const improvements = {
   subtitle: 'Efficiency gains & workflow optimizations',
   initiatives: [
     {
+      title: '30-Minute SR Mail — Payin, Payout & Wallet in One Screen',
+      status: null,
+      description:
+        'Redesigned the 30-minute Success Rate (SR) monitoring mail so that Payin, Payout and Wallet performance is visible together on a single screen. Each tender and category shows its combined SR, attempts and failures, a colour-coded SR value for every 30-minute slot, and a trend line — so drops can be spotted at a glance without switching between separate reports.',
+      image: {
+        src: 'sr-30min-mail-single-view.png',
+        width: 1897,
+        height: 1048,
+        alt: 'Single-screen 30-minute SR view showing Payin success rate by tender and Payout success rate by category, with colour-coded values for each 30-minute slot, combined SR, attempts and trend lines.',
+        caption: '30-minute SR view — Payin, Payout & Wallet on one screen. Click to open full size.',
+      },
+      impactHeading: 'IMPACT',
+      impact: [
+        'All SR metrics for Payin, Payout and Wallet visible in one screen',
+        'Low-SR slots highlighted by colour for faster anomaly detection',
+        'Quicker review of each 30-minute update by the on-call team',
+      ],
+    },
+    {
       title: 'CX Payout Processing Workflow Improvement',
       status: null,
       description:

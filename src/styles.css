@@ -2422,6 +2422,40 @@ button {
   border-bottom: 1px solid var(--line);
 }
 
+/* Screenshot inside an initiative card */
+.initiative-card__figure {
+  margin: 0 0 22px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.initiative-card__figure a {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  overflow: hidden;
+  background: #fff;
+  cursor: zoom-in;
+  transition: border-color 0.25s var(--ease);
+}
+
+.initiative-card__figure a:hover {
+  border-color: var(--green-line);
+}
+
+.initiative-card__figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.initiative-card__figure figcaption {
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted-2);
+}
+
 /* Link out to the source document, below the outcomes */
 .sop-card__link {
   display: inline-flex;

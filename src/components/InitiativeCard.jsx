@@ -12,8 +12,10 @@ export default function InitiativeCard({
   description,
   impactHeading = 'IMPACT',
   impact,
+  image,
 }) {
   const tone = status?.tone ?? 'shipped'
+  const imageSrc = image && `${import.meta.env.BASE_URL}${image.src}`
 
   return (
     <article className={`card initiative-card initiative-card--${tone}`}>
@@ -22,6 +24,21 @@ export default function InitiativeCard({
         {status && <StatusBadge {...status} />}
       </div>
       <p className="initiative-card__description">{description}</p>
+      {image && (
+        <figure className="initiative-card__figure">
+          <a href={imageSrc} target="_blank" rel="noreferrer" title="Open full size">
+            <img
+              src={imageSrc}
+              alt={image.alt}
+              width={image.width}
+              height={image.height}
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+          {image.caption && <figcaption>{image.caption}</figcaption>}
+        </figure>
+      )}
       <ImpactList heading={impactHeading} items={impact} />
     </article>
   )
