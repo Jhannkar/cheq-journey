@@ -16,3 +16,6 @@ yarn-error.log*
 # local AI-tooling files, not part of the site
 .agents
 skills-lock.json
+
+# generated PDF exports
+*.pdf
